@@ -4,21 +4,19 @@ function buttons(){
     const ans=document.getElementById('ans');
         const broke=document.getElementById('broke');
 
-button_1.addEventListener('mouseover',()=>{
-    button_1.style.display="none"
-        ans.innerText='Click Yes!';
+button_1.addEventListener('click',()=>{
+
+ kiss.classList.remove('hidden');
+      ans.innerHTML='<i class="fa-solid fa-face-grin-squint-tears" style="color: rgba(255, 212, 59, 1);"></i> <i class="fa-solid fa-face-grin-squint-tears" style="color: rgba(255, 212, 59, 1);"></i> <i class="fa-solid fa-face-grin-squint-tears" style="color: rgba(255, 212, 59, 1);"></i>';  
 });
 
-   button_1.addEventListener('mouseout', () => {
-        button_1.style.display = "inline-block"; 
-           ans.innerHTML='<i class="fa-solid fa-face-grin-squint-tears" style="color: rgba(255, 212, 59, 1);"></i> <i class="fa-solid fa-face-grin-squint-tears" style="color: rgba(255, 212, 59, 1);"></i> <i class="fa-solid fa-face-grin-squint-tears" style="color: rgba(255, 212, 59, 1);"></i>';
-    });
 
 
-button_2.addEventListener('click',()=>{
+button_2.addEventListener('mouseover',()=>{
 broke.classList.remove('hidden');
+button_2.classList.add('hidden');
 
-ans.innerHTML='You Broke Me <i class="fa-solid fa-face-frown" style="color: rgba(255, 212, 59, 1);"></i>';
+   ans.innerHTML='<i class="fa-solid fa-face-grin-squint-tears" style="color: rgba(255, 212, 59, 1);"></i> <i class="fa-solid fa-face-grin-squint-tears" style="color: rgba(255, 212, 59, 1);"></i> <i class="fa-solid fa-face-grin-squint-tears" style="color: rgba(255, 212, 59, 1);"></i>';  
 
 });
 
